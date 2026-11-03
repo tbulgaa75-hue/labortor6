@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="margin: 0;">
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid blue"></canvas>
+    <script>
+        var canvas=document.getElementById("myCanvas");
+        var ctx=canvas.getContext("2d");
+
+        let orgon=60;
+        let ondor=20;
+        let coords=[30, 30, 110, 30, 190, 30]
+
+        ctx.beginPath();
+        ctx.rect(coords[0], coords[1], orgon, ondor);
+        ctx.fillStyle="#0095DD"
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.rect(coords[2], coords[3], orgon, ondor);
+        ctx.fillStyle="#0095DD";
+        ctx.fill();
+        ctx.closePath();
+
+        ctx.beginPath();
+        ctx.rect(coords[4], coords[5], orgon, ondor);
+        ctx.fillStyle="#0095DD";
+        ctx.fill();
+        ctx.closePath();
+    </script>  
+</body>
+</html>
